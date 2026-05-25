@@ -1,0 +1,22 @@
+experiment_name: "vkr_citation_hallucinations"
+language: "ru"
+
+generation:
+  max_tokens: 1000
+  temperature: 0.2
+
+benchmark_path: "data/benchmark/benchmark_questions.csv"
+
+paths:
+  raw_responses_dir: "data/raw_responses"
+  parsed_responses_dir: "data/parsed_responses"
+  annotations_dir: "data/annotations"
+  results_dir: "data/results"
+
+prompt_types:
+  - baseline
+  - provoking
+  - conservative
+
+models:
+  - yandex

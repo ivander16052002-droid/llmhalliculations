@@ -1,0 +1,20 @@
+models:
+  yandex:
+    provider: "yandex"
+    model_name: "yandexgpt"
+    enabled: true
+
+  llama3:
+    provider: "ollama"
+    model_name: "llama3"
+    enabled: false
+
+  mistral:
+    provider: "ollama"
+    model_name: "mistral"
+    enabled: false
+
+  qwen:
+    provider: "ollama"
+    model_name: "qwen"
+    enabled: false

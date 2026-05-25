@@ -1,0 +1,63 @@
+# Python cache / build artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Generated data and experiment artifacts
+data/raw_responses/
+data/parsed_responses/
+data/annotated/
+data/annotations/
+data/metrics/
+data/reannotation/
+data/results/
+data/figures/
+
+# Manual / generated tables and raw outputs
+*.xlsx
+*.xls
+*.csv
+*.jsonl
+
+# Reannotation autofill / local dev utility
+# This file is only for local pipeline sanity checks and should not be published.
+src/pipeline/autofill_reannotation.py
+src/pipeline/dev_autofill_reannotation*.py
+
+# Keep folder structure if needed
+!data/raw_responses/.gitkeep
+!data/parsed_responses/.gitkeep
+!data/annotated/.gitkeep
+!data/annotations/.gitkeep
+!data/metrics/.gitkeep
+!data/reannotation/.gitkeep
+!data/results/.gitkeep
+!data/figures/.gitkeep
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
